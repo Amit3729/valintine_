@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>💘 Valentine?</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="card">
+    <div class="badge">💗 Valentine Special 💗</div>
+
+    <h1 id="question">Will you be my Valentine? 🌹</h1>
+    <p id="sub" class="sub">Be honest… but also be cute 😌</p>
+
+    <div class="buttons">
+      <button id="yesBtn" class="btn yes">Yes 💞</button>
+      <button id="noBtn" class="btn no">No 😶</button>
+    </div>
+
+    <div id="meterWrap" class="meterWrap">
+      <div class="meterLabel">Cuteness level</div>
+      <div class="meter">
+        <div id="meterBar" class="meterBar"></div>
+      </div>
+    </div>
+
+    <!-- YouTube Player -->
+    <div id="ytWrap" class="ytWrap hidden">
+      <div id="ytPlayer"></div>
+      <div class="ytHint">🎶 MAYA is playing… (tap unmute if needed)</div>
+    </div>
+
+    <!-- Lyric board -->
+    <div id="lyricBox" class="lyric hidden">
+      <div class="cartoon">🐻💔</div>
+      <div class="board">
+        <span id="lyricText">😢</span>
+      </div>
+    </div>
+
+    <section id="result" class="result hidden">
+      <div class="big">YAYYYYY! 🎉💘</div>
+      <p class="love">
+        You just made my heart do a happy dance 🕺💃<br/>
+        Happy Valentine’s Day! 🌸
+      </p>
+
+      <div class="shareBox">
+        <div class="shareTitle">Share this link:</div>
+        <div class="shareRow">
+          <input id="shareLink" type="text" readonly />
+          <button id="copyBtn" class="btn small">Copy</button>
+        </div>
+        <div class="hint">Send it to someone and watch the “No” button panic 😄</div>
+      </div>
+    </section>
+
+    <canvas id="confetti" class="confetti hidden"></canvas>
+  </main>
+
+  <!-- YouTube API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
